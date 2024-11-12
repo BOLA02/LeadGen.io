@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="deep-blue">
+    <!--HEADER-->
+    <header class="flex flex-row justify-between px-3 py-3 border-b-2  border-b-white  ">
+        <h1 class="text-white ml-3 px-4 font-bold">LeadPulse</h1>
+        <nav class="flex flex-row space-x-5 px-4 py-2">
+           <ul class="flex flex-row space-x-3 mr-2 text-white">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./search.html">Leads</a></li>
+            <li><a href="">Lists</a></li>
+            <li><a href="">Scrapers</a></li>
+           </ul>
+        
+           <div class="btns flex flex-row text-white space-x-2">
+            <a href="" class="new-search px-3 py-1 rounded-xl">New</a>
+            <a href="" class="input-field px-3 py-1 rounded-xl"><i class="fa-solid fa-bell"></i></i></a>
+           </div>
+           <div class="profile-pic  w-2/5" >
+            <img src="/build/img/card4.png" alt=""class="rounded-full w-8">
+           </div>
+        </nav>
+    </header>
+    <!--content-->
+    <main>
+        <div class="container justify-center">
+            <div class="title text-white">
+                <h1 class="font-black text-3xl">Scraping Dashboard</h1>
+                <p class="placeholder">Real-time scraping progress, total leads, and graphs for lead sources</p>
+                <p class="text-white mt-6 font-bold text-xs">Scraping status</p>
+            </div>
+
+            <!-----PROGRESSION BAR-->
+            <div class="progrssion my-5">
+                <div class="status flex justify-between text-white py-2">
+                    <p><span>20%</span> complete</p>
+                    <p><span>20%</span></p>
+                </div>
+                <div class="flex">
+                    <div class="w-[940px]  bg-[#8FB0CC] rounded-full">
+                        <div class=" rounded-full w-[20%] bg-[#2194F2] px-2">scraping..</div> 
+                    </div>
+                </div>
+                <!-- <progress id="file" max="1000" value="200" ></progress> -->
+            </div>
+            <!--SCRAPE-->
+            <div class="scrape flex justify-between py-2">
+                <div class="right-side flex space-x-3 ">
+                    <div class="p-3 px-4 bg-[#8FB0CC] rounded-xl ">
+                        <i class="fa-solid fa-globe   rounded-xl  w-3"></i>
+                    </div>
+                    <div class="sub-topics">
+                        <h5 class="text-white font-semibold">TechCrunch</h5>
+                        <p class="placeholder">Scraping is paused. 0 leads collected</p>
+                    </div>
+                </div>
+                <div class="left-side"><a href="" class="rounded-full px-2 py-1 bg-[#8FB0CC] text-white">Resume</a></div>
+            </div>
+            <div class="scrape flex justify-between py-2">
+                <div class="right-side flex space-x-3 ">
+                    <div class="p-3 px-4 bg-[#8FB0CC] rounded-xl ">
+                        <i class="fa-solid fa-globe   rounded-xl  w-3"></i>
+                    </div>
+                    <div class="sub-topics">
+                        <h5 class="text-white font-semibold">ProductHunt</h5>
+                        <p class="placeholder">Scraping is paused. 0 leads collected</p>
+                    </div>
+                </div>
+                <div class="left-side"><a href="" class="rounded-full px-2 py-1 bg-[#8FB0CC] text-white">Resume</a></div>
+            </div>
+            
+            <div class="scrape flex justify-between py-2">
+                <div class="right-side flex space-x-3 ">
+                    <div class="p-3 px-4 bg-[#8FB0CC] rounded-xl ">
+                        <i class="fa-solid fa-globe   rounded-xl  w-3"></i>
+                    </div>
+                    <div class="sub-topics">
+                        <h5 class="text-white font-semibold">Reddit</h5>
+                        <p class="placeholder">Scraping is paused. 0 leads collected</p>
+                    </div>
+                </div>
+                <div class="left-side"><a href="" class="rounded-full px-2 py-1 bg-[#8FB0CC] text-white">Resume</a></div>
+            </div>
+                <!--boxes-->
+                <div class="boxes grid grid-flow-col gap-x-3 py-3"> 
+                    <div class="box1 border-2 rounded-2xl text-center text-[#8FB0CC] py-3 border-[#8FB0CC]">
+                        <h4>0</h4>
+                        <p>Today</p>
+                    </div>
+                    <div class="box2 border-2 rounded-2xl text-center   text-[#8FB0CC] py-3 border-[#8FB0CC] ">
+                        <h4>0</h4>
+                        <p>This week</p>
+                    </div>
+                    <div class="box3 border-2 rounded-2xl text-center  text-[#8FB0CC] py-3 border-[#8FB0CC]">
+                        <h4>0</h4>
+                        <p>All time</p>
+                    </div>
+                </div>
+
+                <!--SOURCE GRAPH-->
+                <div class="graph-container">
+                    <h4 class="text-white font-black py-2 ">Lead source graph</h4>
+                <div class=" border-2  border-[#8FB0CC] rounded-xl p-3 sud-graph-container">
+                        
+                        <div class="flex flex-row"><h4 class="text-white font-bold">Leads collected by source</h4></div>
+
+                    <div class="grid grid-flow-col gap-x-4 py-2 px-2 w-[250px] ">
+                        <div>
+                            <div class=" column h-[200px] border-t-2  border-[#fff] bg-[#8FB0CC]">
+                            </div>
+                           <h4 class="text-[#8FB0CC] font-bold py-3 text-center">TechCrunch</h4> 
+                        </div>
+
+                        <div>
+                            <div class=" column h-[200px] border-t-2  border-[#fff] bg-[#8FB0CC]">
+                            </div>
+                            <h4 class="text-[#8FB0CC] font-bold py-3 text-center">ProductHunt</h4> 
+                        </div>
+
+                        <div>
+                            <div class=" column h-[200px] border-t-2  border-[#fff] bg-[#8FB0CC]">
+                            </div>
+                            <h4 class="text-[#8FB0CC] font-bold py-3 text-center">Reddit</h4> 
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+    </main>
+    
+</body>
+</html>

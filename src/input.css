@@ -1,0 +1,63 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.deep-blue{
+    background: #0F1A24;
+
+}
+
+.input-field{
+    background-color: #21384A;
+}
+
+.list:hover{
+    background-color: #21384A;
+}
+.placeholder{
+    color: #8FB0CC;
+}
+
+.img-width{
+    width:1650px;
+    max-height: 600px;
+}
+
+.new-search{
+    background-color: #2194F2;
+}
+.slogan{
+    font-weight:900;
+    font-size:48px
+}
+
+.sub-title{
+    width:600px;
+    height:48px;
+    font-weight:400;
+    size:16px;
+}
+.textarea {
+    resize: none;
+    
+  }
+
+.search-btn{
+    background-color: #2194F2;
+}
+
+.container{
+    max-width: 60%;
+    margin: 20px auto;
+    /* border:1px solid red;
+    max-height: 100vh; */
+}
+
+/* #file{
+    width:940px;
+    border-radius: 2rem;
+    color:#2194F2;
+  } */
